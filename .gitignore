@@ -38,3 +38,5 @@ version.json
 
 # Bundled Codex system skills (managed by Codex)
 skills/.system/
+# Local Pi runtime state
+.atl/

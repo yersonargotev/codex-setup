@@ -33,8 +33,14 @@ trust_level = "trusted"
 [projects."/Users/argote/.codex"]
 trust_level = "trusted"
 
+[projects."/Users/argote/.config/opencode"]
+trust_level = "trusted"
+
+[projects."/Users/argote/.config"]
+trust_level = "trusted"
+
 [tui]
-status_line = ["model-with-reasoning", "permissions", "five-hour-limit", "weekly-limit", "context-used", "used-tokens"]
+status_line = ["model-with-reasoning", "permissions", "five-hour-limit", "weekly-limit", "used-tokens"]
 status_line_use_colors = true
 
 [tui.model_availability_nux]
