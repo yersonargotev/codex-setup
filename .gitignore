@@ -1,0 +1,40 @@
+# Codex secrets / identity
+auth.json
+installation_id
+
+# Runtime state and history
+.codex-global-state.json*
+.personality_migration
+history.jsonl
+sessions/
+archived_sessions/
+shell_snapshots/
+log/
+memories/
+pets/
+
+# SQLite state stores and WAL/SHM companions
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+sqlite/
+
+# Logs and caches
+cache/
+models_cache.json
+vendor_imports/
+.tmp/
+tmp/
+
+# Generated/bundled app and plugin caches
+computer-use/
+plugins/cache/
+chrome-native-hosts.json
+version.json
+
+# OS/editor noise
+.DS_Store
+*.swp
+
+# Bundled Codex system skills (managed by Codex)
+skills/.system/
