@@ -1,5 +1,7 @@
 notify = ["/Users/argote/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
 approvals_reviewer = "user"
+sandbox_mode = "danger-full-access"
+approval_policy = "never"
 
 model_instructions_file = "/Users/argote/.codex/engram-instructions.md"
 experimental_compact_prompt_file = "/Users/argote/.codex/engram-compact-prompt.md"
