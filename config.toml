@@ -1,0 +1,87 @@
+notify = ["/Users/argote/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+approvals_reviewer = "user"
+
+model_instructions_file = "/Users/argote/.codex/engram-instructions.md"
+experimental_compact_prompt_file = "/Users/argote/.codex/engram-compact-prompt.md"
+[projects."/Users/argote"]
+trust_level = "trusted"
+
+[projects."/Users/argote/Documents/dev/sparkydevs/what-pedidos"]
+trust_level = "trusted"
+
+[projects."/Users/argote/Documents/dev/sparkydevs/landing"]
+trust_level = "trusted"
+
+[projects."/Users/argote/Documents/dev/yersonargotev/benbg"]
+trust_level = "trusted"
+
+[projects."/Users/argote/Documents/dev/yersonargotev/platform"]
+trust_level = "trusted"
+
+[projects."/Users/argote/Documents/dev/napoleon/ngold"]
+trust_level = "trusted"
+
+[projects."/Users/argote/.warp"]
+trust_level = "trusted"
+
+[projects."/Users/argote/Documents/dev/exito/exito-search"]
+trust_level = "trusted"
+
+[projects."/Users/argote/Documents/exito/faststore/exito.store"]
+trust_level = "trusted"
+
+[projects."/Users/argote/.codex"]
+trust_level = "trusted"
+
+[tui]
+status_line = ["model-with-reasoning", "permissions", "five-hour-limit", "weekly-limit", "context-used", "used-tokens"]
+status_line_use_colors = true
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/Codex.app/Contents/Resources/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = ""
+NODE_REPL_NODE_PATH = "/Applications/Codex.app/Contents/Resources/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/argote/.codex"
+CODEX_HOME = "/Users/argote/.codex"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "0b0d41e7a14a4903d2f95b0b3f427ed796b12c8edca2fa392a03df43997075ae"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+CODEX_CLI_PATH = "/Applications/Codex.app/Contents/Resources/codex"
+
+[features]
+js_repl = false
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[desktop.open-in-target-preferences]
+global = "zed"
+
+[desktop.open-in-target-preferences.perPath]
+"/Users/argote/Documents/dev/sparkydevs/what-pedidos" = "zed"
+
+[notice]
+hide_full_access_warning = true
+
+[marketplaces.openai-bundled]
+last_updated = "2026-05-30T04:03:28Z"
+source_type = "local"
+source = "/Users/argote/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[mcp_servers.codegraph]
+command = "codegraph"
+args = ["serve", "--mcp"]
+
+[mcp_servers.engram]
+command = "/opt/homebrew/bin/engram"
+args = ["mcp", "--tools=agent"]
