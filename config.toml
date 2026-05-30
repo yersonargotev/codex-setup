@@ -64,6 +64,14 @@ NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunct
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
 CODEX_CLI_PATH = "/Applications/Codex.app/Contents/Resources/codex"
 
+[mcp_servers.chrome-devtools]
+command = "npx"
+args = ["-y", "chrome-devtools-mcp@latest", "--no-performance-crux"]
+
+[mcp_servers.chrome-devtools.env]
+CHROME_DEVTOOLS_MCP_NO_UPDATE_CHECKS = "1"
+CHROME_DEVTOOLS_MCP_NO_USAGE_STATISTICS = "1"
+
 [features]
 js_repl = false
 
